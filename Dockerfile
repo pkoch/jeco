@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:eoan
 
 RUN apt update -qq && apt upgrade -qq -y
 RUN apt install -y \
@@ -13,6 +13,7 @@ RUN apt install -y \
     vim \
     python3-pip \
     docker.io \
+    amazon-ecr-credential-helper \
     ;
 
 RUN cd /tmp && \
