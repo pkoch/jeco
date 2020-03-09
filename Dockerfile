@@ -2,7 +2,6 @@ FROM ubuntu:eoan
 
 RUN apt update -qq && apt upgrade -qq -y
 RUN apt install -y \
-    command-not-found \
     curl \
     exuberant-ctags \
     git \
